@@ -14,8 +14,13 @@ export class AppComponent implements OnInit {
     let meuPrimeiroObjeto = new MinhaPrimeiraClasse('João', 34, 'Violeiro');
     let meuSegundoObjeto = new MinhaPrimeiraClasse('Maria', 60, 'Costureira');
     let meuTerceiroObjeto = new MinhaSegundaClasse('Rafa', 30, 'Analista');
-    console.log(meuPrimeiroObjeto);
-    console.log(meuSegundoObjeto);
-    console.log(meuTerceiroObjeto);
+    // console.log(meuPrimeiroObjeto);
+    // console.log(meuSegundoObjeto);
+    // console.log(meuTerceiroObjeto);
+
+    console.log('nome original ->', meuPrimeiroObjeto.getNome);
+    meuPrimeiroObjeto.setNome = 'Francisco';
+    console.log('nome alterado pelo setter ->', meuPrimeiroObjeto.getNome);
+    meuPrimeiroObjeto.setNome = '';
   }
 }

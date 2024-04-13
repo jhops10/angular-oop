@@ -9,10 +9,14 @@ export class MinhaPrimeiraClasse {
     this.cargo = cargo;
   }
 
-  getNome(): string {
+  get getNome(): string {
     return this.nome;
   }
-  setNome(nome: string): void {
-    this.nome = nome;
+  set setNome(nome: string) {
+    if (nome != '') {
+      this.nome = nome;
+    } else {
+      alert('Insira um nome no setter');
+    }
   }
 }
