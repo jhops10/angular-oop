@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MinhaPrimeiraClasse } from './fundamentos/classes/MinhaPrimeiraClasse';
 import { MinhaSegundaClasse } from './fundamentos/classes/MinhaSegundaClasse';
-import { FormsModule } from '@angular/forms';
-import { Funcionario } from './fundamentos/super/Funcionario';
+
+import { Gato } from './fundamentos/classes/Gato';
+import { Cachorro } from './fundamentos/classes/Cachorro';
 
 @Component({
   selector: 'app-root',
@@ -24,8 +25,15 @@ export class AppComponent implements OnInit {
     // meuPrimeiroObjeto.setNome = 'Francisco';
     // console.log('nome alterado pelo setter ->', meuPrimeiroObjeto.getNome);
 
-    let funcionario = new Funcionario('Joao', 'Dev');
-    console.log('funcionário ->', funcionario);
-    funcionario.message();
+    // let funcionario = new Funcionario('Joao', 'Dev');
+    // console.log('funcionário ->', funcionario);
+    // funcionario.message();
+
+    let gato = new Gato('Tom');
+    console.log('Gato ->', gato);
+    console.log(gato.barulho());
+    let cachorro = new Cachorro('Turky');
+    console.log('Cachorro ->', cachorro);
+    console.log(cachorro.barulho());
   }
 }
