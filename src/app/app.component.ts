@@ -4,6 +4,7 @@ import { MinhaSegundaClasse } from './fundamentos/classes/MinhaSegundaClasse';
 
 import { Gato } from './fundamentos/classes/Gato';
 import { Cachorro } from './fundamentos/classes/Cachorro';
+import { Funcionario } from './fundamentos/classes/Funcionario';
 
 @Component({
   selector: 'app-root',
@@ -29,11 +30,13 @@ export class AppComponent implements OnInit {
     // console.log('funcionário ->', funcionario);
     // funcionario.message();
 
-    let gato = new Gato('Tom');
-    console.log('Gato ->', gato);
-    console.log(gato.barulho());
-    let cachorro = new Cachorro('Turky');
-    console.log('Cachorro ->', cachorro);
-    console.log(cachorro.barulho());
+    // let gato = new Gato('Tom');
+    // console.log('Gato ->', gato);
+    // console.log(gato.barulho());
+    // let cachorro = new Cachorro('Turky');
+    // console.log('Cachorro ->', cachorro);
+    // console.log(cachorro.barulho());
+
+    let funcionario = new Funcionario('Joao', 33, 1000);
   }
 }
