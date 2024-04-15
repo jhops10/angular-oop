@@ -11,7 +11,7 @@ export class MeuComponentComponent implements OnInit {
   bolo!: BoloInterface;
 
   ngOnInit(): void {
-    this.bolo = new Bolo('Laranja', 1);
-    console.log(this.bolo);
+    // this.bolo = new Bolo('Laranja', 1);
+    // console.log(this.bolo);
   }
 }
