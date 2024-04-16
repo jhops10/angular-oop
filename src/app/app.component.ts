@@ -1,3 +1,4 @@
+import { TocarMusica } from './fundamentos/classes/TocarMusica';
 import { Component, OnInit } from '@angular/core';
 import { MinhaPrimeiraClasse } from './fundamentos/classes/MinhaPrimeiraClasse';
 import { MinhaSegundaClasse } from './fundamentos/classes/MinhaSegundaClasse';
@@ -7,6 +8,8 @@ import { Cachorro } from './fundamentos/classes/Cachorro';
 import { Funcionario } from './fundamentos/classes/Funcionario';
 import { Carro } from './fundamentos/classes/Carro';
 import { Aviao } from './fundamentos/classes/Aviao';
+import { Guitarra } from './fundamentos/classes/Guitarra';
+import { Piano } from './fundamentos/classes/Piano';
 
 @Component({
   selector: 'app-root',
@@ -41,11 +44,17 @@ export class AppComponent implements OnInit {
 
     // let funcionario = new Funcionario('Joao', 33, 1000);
 
-    let carro = new Carro('Fiat', 'Uno');
-    console.log('carro ->', carro);
-    carro.mover();
-    let aviao = new Aviao('Airbus', 'A380');
-    console.log('aviao ->', aviao);
-    aviao.mover();
+    // let carro = new Carro('Fiat', 'Uno');
+    // console.log('carro ->', carro);
+    // carro.mover();
+    // let aviao = new Aviao('Airbus', 'A380');
+    // console.log('aviao ->', aviao);
+    // aviao.mover();
+
+    let guitarra = new Guitarra();
+    let piano = new Piano();
+    let tocarMusica = new TocarMusica();
+    tocarMusica.tocar(guitarra);
+    tocarMusica.tocar(piano);
   }
 }
