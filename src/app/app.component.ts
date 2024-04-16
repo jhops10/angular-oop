@@ -5,6 +5,8 @@ import { MinhaSegundaClasse } from './fundamentos/classes/MinhaSegundaClasse';
 import { Gato } from './fundamentos/classes/Gato';
 import { Cachorro } from './fundamentos/classes/Cachorro';
 import { Funcionario } from './fundamentos/classes/Funcionario';
+import { Carro } from './fundamentos/classes/Carro';
+import { Aviao } from './fundamentos/classes/Aviao';
 
 @Component({
   selector: 'app-root',
@@ -37,6 +39,13 @@ export class AppComponent implements OnInit {
     // console.log('Cachorro ->', cachorro);
     // console.log(cachorro.barulho());
 
-    let funcionario = new Funcionario('Joao', 33, 1000);
+    // let funcionario = new Funcionario('Joao', 33, 1000);
+
+    let carro = new Carro('Fiat', 'Uno');
+    console.log('carro ->', carro);
+    carro.mover();
+    let aviao = new Aviao('Airbus', 'A380');
+    console.log('aviao ->', aviao);
+    aviao.mover();
   }
 }
